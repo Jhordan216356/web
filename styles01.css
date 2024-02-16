@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Cambiado a space-around para mejor distribución en dispositivos pequeños */
+    padding: 20px;
+}
+
+.curso {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 0 1 calc(50% - 20px); /* Cambiado el tamaño de los cursos para que se ajusten mejor en dispositivos pequeños */
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.curso:hover {
+    transform: translateY(-5px);
+}
+
+.curso img {
+    width: 100%;
+    height: auto; /* Cambiado a auto para mantener la proporción de la imagen */
+    margin-bottom: 20px;
+}
+
+.curso h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.curso p {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.curso a {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.curso a:hover {
+    background-color: #444;
+}

@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #c0baba;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+header p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+a:hover {
+  background-color: #ccc;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que las imágenes se envuelvan en pantallas pequeñas */
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Cambiar el ancho al 100% para que se ajuste al contenedor */
+  max-width: 300px; /* Establecer un ancho máximo para evitar que las imágenes se estiren demasiado */
+  height: auto;
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform .5s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(200, 200, 200, 0.8); /* Fondo gris claro transparente */
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity .5s ease;
+  border: 2px solid #fff; /* Añadir borde blanco de 2px */
+}
+
+.image-container:hover .info {
+  opacity: 1;
+}
+
+.info h2 {
+  margin: 0;
+}
+
+.info a {
+  text-decoration: none;
+}
